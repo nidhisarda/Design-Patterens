@@ -132,5 +132,15 @@ public class LinkedInIterator implements ProfileIterator {
 }
 
 
+package nidhi.social_networks;
+
+import nidhi.iterators.ProfileIterator;
+
+public interface SocialNetwork {
+    ProfileIterator createFriendsIterator(String profileEmail);
+
+    ProfileIterator createCoworkersIterator(String profileEmail);
+}
+
 
 
